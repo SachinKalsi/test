@@ -1,0 +1,306 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[backend=biber,
+style=numeric,
+sorting=none,
+isbn=false,
+doi=false,
+url=false,
+]{biblatex}\addbibresource{bibliography.bib}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}\usepackage[paperheight=11.0in,paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,}
+
+\urlstyle{same}
+
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+ %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+
+\setlistdepth{9}
+\renewlist{enumerate}{enumerate}{9}
+		\setlist[enumerate,1]{label=\arabic*)}
+		\setlist[enumerate,2]{label=\alph*)}
+		\setlist[enumerate,3]{label=(\roman*)}
+		\setlist[enumerate,4]{label=(\arabic*)}
+		\setlist[enumerate,5]{label=(\Alph*)}
+		\setlist[enumerate,6]{label=(\Roman*)}
+		\setlist[enumerate,7]{label=\arabic*}
+		\setlist[enumerate,8]{label=\alph*}
+		\setlist[enumerate,9]{label=\roman*}
+
+\renewlist{itemize}{itemize}{9}
+		\setlist[itemize]{label=$\cdot$}
+		\setlist[itemize,1]{label=\textbullet}
+		\setlist[itemize,2]{label=$\circ$}
+		\setlist[itemize,3]{label=$\ast$}
+		\setlist[itemize,4]{label=$\dagger$}
+		\setlist[itemize,5]{label=$\triangleright$}
+		\setlist[itemize,6]{label=$\bigstar$}
+		\setlist[itemize,7]{label=$\blacklozenge$}
+		\setlist[itemize,8]{label=$\prime$}
+
+\setlength{\topsep}{0pt}\setlength{\parindent}{0pt}
+
+ %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+
+\renewcommand{\arraystretch}{1.3}
+
+
+%%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+\setlength{\parskip}{5.04pt}
+\begin{FlushLeft}
+\textbf{SACHIN KALSI,  passionate programmer}
+\end{FlushLeft}\par
+
+\begin{FlushLeft}
+\href{mailto:sachinkalsi15@gmail.com}{\textbf{\textcolor[HTML]{1155CC}{sachinkalsi15@gmail.com}}}
+\end{FlushLeft}\par
+
+\begin{FlushLeft}
+\textbf{+91 9945746470}
+\end{FlushLeft}\par
+
+\begin{FlushRight}
+\href{https://sachinkalsi.github.io/}{\textbf{\textcolor[HTML]{1155CC}{Portfolio}}} $ \vert $  \href{https://sachinkalsi.github.io/blog}{\textbf{\textcolor[HTML]{1155CC}{Blog}}} $ \vert $  \href{https://www.linkedin.com/in/sachinkalsi}{\textbf{\textcolor[HTML]{1155CC}{LinkedIn}}} $ \vert $ 
+\href{https://github.com/sachinkalsi}{\textbf{\textcolor[HTML]{1155CC}{Github}}} $ \vert $ 
+\href{https://stackoverflow.com/users/story/4467291}{\textbf{\textcolor[HTML]{1155CC}{Stackoverflow}}}
+\end{FlushRight}\par
+
+
+\vspace{\baselineskip}
+\begin{FlushLeft}
+{\fontsize{14pt}{16.8pt}\selectfont \textbf{CAREER SUMMARY}\par}
+\end{FlushLeft}\par
+
+\begin{itemize}
+	\item A passionate programmer with 3+ years of experience in software development and 1.6 years of experience in Machine Learning $\&$  Data Analytics\par
+
+	\item Proficient with Data Structures and algorithms.\par
+
+	\item Hands on experience in developing API services in an Agile environment
+\end{itemize}\par
+
+
+\vspace{\baselineskip}
+\begin{FlushLeft}
+\textbf{TECHNICAL SKILLS}
+\end{FlushLeft}\par
+
+\begin{itemize}
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{Machine Learning: }KNN, Naive Bayes, Logistic Regression, Decision Trees, Ensemble models, Unsupervised learning Algorithms, Deep Learning.\par}\par
+
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{Programming Languages: }Python3, Java(Fluent, Prior Experience), Node JS (Proficient)\par}\par
+
+	\item \textbf{Database}: MongoDB (Fluent, Prior Experience), MySQL (Basic)\par
+
+	\item \textbf{Web servers:} Nginx(Basic), Express JS(Proficient)\par
+
+	\item \textbf{Cloud-computing services}: Amazon Web Services (AWS). I have used EC2, S3, Route 53
+\end{itemize}\par
+
+
+\vspace{\baselineskip}
+\begin{FlushLeft}
+\textbf{EXPERIENCE IN INDUSTRY}
+\end{FlushLeft}\par
+
+\begin{itemize}
+	\item {\fontsize{13pt}{15.6pt}\selectfont As a Software Engineer (ML Role) in Calient Technologies from Oct, 2017 to present.\par}\par
+
+	\item As a {\fontsize{13pt}{15.6pt}\selectfont Software Developer in Cogoport from Feb, 2017 to Sep, 2017.\par}\par
+
+	\item As a {\fontsize{13pt}{15.6pt}\selectfont Backend Developer in Techniche e-commerce solutions from Apr, 2015 to Feb, 2017.\par}\par
+
+	\item As a {\fontsize{13pt}{15.6pt}\selectfont Technical Consultant in Hewlett Packard from Aug, 2013 to Dec, 2014.\par}
+\end{itemize}\par
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\begin{FlushLeft}
+{\fontsize{14pt}{16.8pt}\selectfont \textbf{PROJECTS:}\par}
+\end{FlushLeft}\par
+
+\begin{itemize}
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{Text Classification $\&$  Issue type predictor (}Calient technologies\textbf{)}\par}\par
+
+\begin{itemize}
+	\item Used \textbf{Logistic Regression and Naive Bayes} model to classify the logs (which contains various network devices error logs) into separate files which has device specific error logs $\&$  could able to achieve \textbf{accuracy of} \textbf{81$\%$ }\par
+
+	\item Each error log might have related to multiple issues. So main goal was to predict different issue types for a given error log. We have used\textbf{ Logistic Regression and Linear SVM }to solve this multi-label classification problem with a moderate result.\par
+
+	\item \textbf{Language $\&$  libraries: }python3\textbf{, }scikit-learn, nltk, pandas, matplotlib, numpy, scipy\\
+\par
+
+
+\end{itemize}
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{Auto Discovery $\&$  Verification Automation (}Calient technologies\textbf{)}\par}\par
+
+\begin{itemize}
+	\item Designed an algorithm to auto discover the ports connected to optical switches which has reduced the human efforts by 20 hours approximately Prior to this, the task was being done manually\par
+
+	\item \textbf{Language $\&$  DB}: JAVA, MySQL\\
+\par
+
+
+\end{itemize}
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{Cogoport, an International Logistics (}Cogoport.com\textbf{)}\par}\par
+
+\begin{itemize}
+	\item Cogoport is a digital platform for integrated ocean logistics solutions\par
+
+	\item My role was to crawl various websites, data analysis $\&$  interpreting the data that helps for sales team, DB Design. Also I was working on REST API development using Ruby On Rails framework.\par
+
+	\item \textbf{Tools $\&$  technologies}: RoR, MongoDB, Node JS, AWS EC2\\
+\par
+
+
+\end{itemize}
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{Techniche e-commerce Solutions}\par}\par
+
+\begin{itemize}
+	\item Designed 2 e-commerce websites\par
+
+	\item Taken end to end responsibility starting from getting requirements from clients to its productionalization\par
+
+	\item \textbf{Tools $\&$  Technologies Used}:\ Node JS, Express JS,  AWS EC2, tokbox (Web RTC), Payment Gateways Integration, Database modeling
+\end{itemize}
+\end{itemize}\par
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\begin{FlushLeft}
+\textbf{HOBBY/OTHER PROJECTS}
+\end{FlushLeft}\par
+
+\begin{enumerate}
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{Quora Question Pair Similarity}}(\href{https://github.com/SachinKalsi/machine-learning-case-studies/tree/master/quora_question_pairs}{\textbf{\textcolor[HTML]{1155CC}{Github}}})
+\begin{enumerate}
+	\item \textbf{Problem type: }Binary classification\par
+
+	\item \textbf{Models Used: }Logistic Regression, Linear SVM, XGBoost\par
+
+	\item \textbf{Problem Statement:} Classify whether question pairs are duplicates or not\\
+\end{enumerate}
+
+
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{Taxi Demand Prediction}\par}
+
+\begin{enumerate}
+	\item \textbf{Problem type: }Regression\par
+
+	\item \textbf{Models Used}: KMeans, Random Forest, XGBoost\par
+
+	\item \textbf{Problem Statement: }Predict number of Taxi required for a given location and for a given time (10 minutes)\\
+\par
+
+
+\end{enumerate}
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{Human Activity Recognition}\par}\par
+
+\begin{enumerate}
+	\item \textbf{Problem type: }Multi Class classification\par
+
+	\item \textbf{Models Used}: LSTM (Deep Learning)\par
+
+	\item \textbf{Problem Statement}: Classify sequences of accelerometer data recorded by smart phones into known well-defined movements\\
+\par
+
+
+\end{enumerate}
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{WhatsApp Chat Analyzer}}
+	(\href{https://github.com/sachinkalsi/whatsapp-chat-analyser}{\textbf{\textcolor[HTML]{1155CC}{GitHub}}})
+
+\begin{enumerate}
+
+\item {Get stats, fun facts, analytics etc from your WhatsApp Groups.}
+
+\end{enumerate}
+
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{Track Email}}
+	(\href{https://github.com/sachinkalsi/track-email}{\textbf{\textcolor[HTML]{1155CC}{GitHub}}})
+	
+	\begin{enumerate}
+	{\item{This application lets you know whether emails you sent have been read by recipients or not. Also it will let you know when a recipient has opened an email}}
+	\end{enumerate}
+\par
+
+	\item {\fontsize{14pt}{16.8pt}\selectfont \textbf{\textbf{Anonymous video upload}}}
+(\href{https://github.com/sachinkalsi/video-upload-and-video-streaming}{\textbf{\textcolor[HTML]{1155CC}{GitHub}}}\text{,} \href{http://guarded-earth-63038.herokuapp.com/}{\textbf{\textcolor[HTML]{1155CC}{website}}})
+	
+
+\end{enumerate}\par
+
+
+\vspace{\baselineskip}
+\begin{FlushLeft}
+{\fontsize{14pt}{16.8pt}\selectfont \textbf{PERSONAL DETAILS}\par}
+\end{FlushLeft}\par
+
+\begin{itemize}
+	\item Date of Birth : 03-SEP-1991\par
+
+	\item Nationality: INDIAN
+\end{itemize}\par
+
+\end{document}
