@@ -31,7 +31,8 @@
     for(i=0;i<ids.length;i++){
       document.getElementById(ids[i]).innerHTML = values[i]
     }
-    document.getElementById('magic_number').innerHTML = "Your magic number is " + (dd+mm+cc+yy)
+    document.getElementById('magic_number').innerHTML = "The sum of every row, column, diagonal, and most 2x2 blocks is <span style='color: green;font-size: 50px;'>" + (dd+mm+cc+yy) + "</span>"
+    document.getElementById('more_info').innerHTML = '<i>As you might know there is nothing called as "magic". Please refer <a href="https://en.wikipedia.org/wiki/Magic_square" target="_blank"> wiki</a> for more info on Ramanujan\'s magic square <i>'
   }
   </script>
 </head>
@@ -47,7 +48,7 @@
   </div>             
   <table class="table table-bordered text-center">
     <tbody>
-      <tr>
+      <tr style="color: red;font-size: large;">
         <td id="dd">_</td>
         <td id="mm">_</td>
         <td id="cc">_</td>
@@ -73,7 +74,8 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="magic_number"><h3>
+  <h3 id="magic_number"></h3>
+  <p id="more_info"></p>
 </div>
 
 </body>
