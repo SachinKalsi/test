@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  .table {
+    border-radius: 5px;
+    width: 25%;
+    margin: 0px auto;
+    float: none;
+    margin-top: 6%;
+}
+  </style>
+  <script>
+  function generateSquare(){
+    bDate = document.getElementById('bdate').value
+    if(bDate.length){
+      bDate = bDate.split('-')
+      cc = parseInt(bDate[0].substring(0, 2))
+      yy = parseInt(bDate[0].substring(2, 4))
+      mm = parseInt(bDate[1])
+      dd = parseInt(bDate[2])
+    }
+    ids = ["dd", "mm", "cc", "yy", "yy+1", "cc-1", "mm-3", "dd+3", "mm-2", "dd+2", "yy+2", "cc-2", "cc+1", "yy-1", "dd+1", "mm-1"]
+    values = [dd, mm, cc, yy, yy+1, cc-1, mm-3, dd+3, mm-2, dd+2, yy+2, cc-2, cc+1, yy-1, dd+1, mm-1]
+    for(i=0;i<ids.length;i++){
+      document.getElementById(ids[i]).innerHTML = values[i]
+    }
+    document.getElementById('magic_number').innerHTML = "Your magic number is " + (dd+mm+cc+yy)
+  }
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <h2>MAGIC SQUARE</h2>
+  <div class="container">
+    <form>
+      Enter your Birthday <input id="bdate" type="date" name="bday">
+      <button type="button" onclick="generateSquare()" class="btn btn-primary">Generate Magic Square</button>
+    </form>
+  </div>             
+  <table class="table table-bordered text-center">
+    <tbody>
+      <tr>
+        <td id="dd">_</td>
+        <td id="mm">_</td>
+        <td id="cc">_</td>
+        <td id="yy">_</td>
+      </tr>
+      <tr>
+        <td id="yy+1">_</td>
+        <td id="cc-1">_</td>
+        <td id="mm-3">_</td>
+        <td id="dd+3">_</td>
+      </tr>
+      <tr>
+        <td id="mm-2">_</td>
+        <td id="dd+2">_</td>
+        <td id="yy+2">_</td>
+        <td id="cc-2">_</td>
+      </tr>
+      <tr>
+        <td id="cc+1">_</td>
+        <td id="yy-1">_</td>
+        <td id="dd+1">_</td>
+        <td id="mm-1">_</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="magic_number"><h3>
+</div>
+
+</body>
+</html>
