@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: sachinkalsi.github.io
+Token: fae56986320c7e0a6f0243abe54e39bf8020c572fda390dafaa6bf0b15d85996
